@@ -1,0 +1,103 @@
+{
+  "monumentResearchBenches": {
+    "assets/bundled/prefabs/autospawn/monument/small/warehouse.prefab": {
+      "xPos": -10.4,
+      "yPos": 0.290982723,
+      "zPos": -2.48829985,
+      "xRot": 0.0,
+      "yRot": 0.5,
+      "zRot": 0.0,
+      "wRot": -0.5
+    },
+    "assets/bundled/prefabs/autospawn/monument/lighthouse/lighthouse.prefab": {
+      "xPos": 6.2,
+      "yPos": 18.3230114,
+      "zPos": -1.51209772,
+      "xRot": 0.0,
+      "yRot": 0.5,
+      "zRot": 0.0,
+      "wRot": -0.5
+    },
+    "assets/bundled/prefabs/autospawn/monument/harbor/harbor_1.prefab": {
+      "xPos": 81.4,
+      "yPos": 5.55574846,
+      "zPos": 63.02082,
+      "xRot": 0.0,
+      "yRot": 1.0,
+      "zRot": 0.0,
+      "wRot": -0.8
+    },
+    "assets/bundled/prefabs/autospawn/monument/medium/radtown_small_3.prefab": {
+      "xPos": -29.5,
+      "yPos": 20.28243,
+      "zPos": -48.5,
+      "xRot": 0.0,
+      "yRot": 0.4,
+      "zRot": 0.0,
+      "wRot": 1.0
+    },
+    "assets/bundled/prefabs/autospawn/monument/harbor/harbor_2.prefab": {
+      "xPos": 41.6434326,
+      "yPos": 5.275006,
+      "zPos": 29.2668037,
+      "xRot": 0.0,
+      "yRot": 0.7170531,
+      "zRot": 0.0,
+      "wRot": -0.6970185
+    },
+    "assets/bundled/prefabs/autospawn/monument/large/trainyard_1.prefab": {
+      "xPos": 57.5436249,
+      "yPos": 24.2499847,
+      "zPos": 6.17501163,
+      "xRot": 0.0,
+      "yRot": 0.0,
+      "zRot": 0.0,
+      "wRot": 0.9398443
+    },
+    "assets/bundled/prefabs/autospawn/monument/large/airfield_1.prefab": {
+      "xPos": 21.2649345,
+      "yPos": 0.221622467,
+      "zPos": 43.7693176,
+      "xRot": 0.0,
+      "yRot": 1.0,
+      "zRot": 0.0,
+      "wRot": 1.0
+    },
+    "assets/bundled/prefabs/autospawn/monument/small/satellite_dish.prefab": {
+      "xPos": -1.7,
+      "yPos": 14.0659466,
+      "zPos": 0.416937,
+      "xRot": 0.0,
+      "yRot": -0.7,
+      "zRot": 0.0,
+      "wRot": 0.7
+    },
+    "assets/bundled/prefabs/autospawn/monument/large/water_treatment_plant_1.prefab": {
+      "xPos": -2.99089622,
+      "yPos": 6.19664,
+      "zPos": -60.9868279,
+      "xRot": 0.0,
+      "yRot": 1.0,
+      "zRot": 0.0,
+      "wRot": 0.0
+    },
+    "assets/bundled/prefabs/autospawn/monument/large/military_tunnel_1.prefab": {
+      "xPos": -63.76945,
+      "yPos": 22.0999985,
+      "zPos": 28.7085419,
+      "xRot": 0.0,
+      "yRot": 0.7,
+      "zRot": 0.0,
+      "wRot": -1.0
+    },
+    "assets/bundled/prefabs/autospawn/monument/small/sphere_tank.prefab": {
+      "xPos": -21.1,
+      "yPos": 31.95,
+      "zPos": 21.0,
+      "xRot": 0.0,
+      "yRot": 1.0,
+      "zRot": 0.0,
+      "wRot": 0.3
+    }
+  }
+}
