@@ -340,7 +340,9 @@
       "wood",
       "deermeat.burned",
       "deermeat.cooked",
-      "deermeat.raw"
+      "deermeat.raw",
+      "mailbox",
+      "scrap"
     ]
   },
   "itemLevels": {
@@ -673,6 +675,8 @@
     "wood.armor.helmet": 1,
     "deermeat.burned": 99999,
     "deermeat.cooked": 99999,
-    "deermeat.raw": 99999
+    "deermeat.raw": 99999,
+    "mailbox": 0,
+    "scrap": 99999
   }
 }
