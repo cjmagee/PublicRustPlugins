@@ -73,7 +73,7 @@ Despawn time also scales with the over-stack amount: 10k wood despawns in 10x th
 
 This had the side-effect of making it very difficult to crash a server by dropping a bunch of pumkins or rocks in one place, though you could still still use the much less effective method of "running around and dropping them one by one in different locations".
 
-Non-stackable items stack on the ground as well, while preserving attachment, ammo, etc.
+[Non-stackable items stack on the ground as well, while preserving attachment, ammo, etc.](https://www.youtube.com/watch?v=uCsUEroNQ3o)
 
 ## RecycleTweaks
 
