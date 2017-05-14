@@ -49,12 +49,6 @@ Luckily, presents had an "unwrap" and "combine" option, which was good enough to
 
 A SUPER simple plugin, that grabs the combatlog of a player based on steamID. Eventually the plugin will change the way combatlog works, by filtering hits on players, animals, building blocks, heli, etc. (Would only display player attacks, the rest are irrelivant 99% of the time)
 
-## JakeMemoryDebug
-
-A poorly named plugin: It should be named "Jake Visual Debug". Allows you to look around at all the variables, and call functions inside any running plugin. 
-
-Was super useful to see what funky stuff was going on when our modded server was really laggy. Perhaps there was an edge case causing a dictionary not to be cleared, or you wanted to call a reset function, but couldn't reload the plugin to add a chat command.
-
 ## NoDespawning
 
 Could also be called "PersistantItems". A super cool plugin I wrote over a random weekend: it optimizes dropped items on a server, while also allowing them to stay around way longer. 
@@ -82,3 +76,13 @@ Another simple plugin that allows empty cans to be recycled. It was also going t
 ## ShorterNights
 
 This one was written by audi (i_love_code), it made night shorter while making it very hard for the player to tell we skipped it. It switches between equal daylight levels (22:00 -> 5:00). Unless the player watches the sky and sees the moon jump, they won't notice the "magic" as it happens. 
+
+## Visual Debug
+
+[Preview](https://gyazo.com/0758809fb4e5d55bf32e48194571356a)
+
+Allows you to look around at all the variables, and call functions inside any running plugin. 
+
+I am actually super proud of this plugin: it was my first real dive into reflection, and it is really cool all the debugging and fun stuff you can do with it :)
+
+Was super useful to see what funky stuff was going on when our modded server was really laggy. Perhaps there was an edge case causing a dictionary not to be cleared, or you wanted to call a reset function, but couldn't reload the plugin to add a chat command.
