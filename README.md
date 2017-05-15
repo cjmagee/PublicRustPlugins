@@ -53,7 +53,7 @@ A SUPER simple plugin, that grabs the combatlog of a player based on steamID. Ev
 
 Could also be called "PersistantItems". A super cool plugin I wrote over a random weekend: it optimizes dropped items on a server, while also allowing them to stay around way longer. 
 
-Originially all items had super long despawn times, but it was soon discovered that the only way players get rid of trash is by dropping it on the ground and letting it despawn. As it currently stands, items such as burlap clothing only stick around for 15 minutes, while an assault rifle will stay around for 3 days, and an m249 will stay around for an entire week!
+When this was first designed, all items had super long despawn times. It was soon discovered that the only way players get rid of trash is by dropping it on the ground and letting it despawn. As it currently stands, items such as burlap clothing only stick around for 15 minutes, while an assault rifle will stay around for 3 days, and an m249 will stay around for an entire week.
 
 ### Details:
 
@@ -81,7 +81,7 @@ This one was written by audi (i_love_code), it made night shorter while making i
 
 [Preview](https://gyazo.com/0758809fb4e5d55bf32e48194571356a)
 
-Allows you to look around at all the variables, and call functions inside any running plugin. 
+Allows you to look around at all the variables, and call functions inside any running plugin. Designed to be similar to Visual Studio's object explorer when debugging.
 
 I am actually super proud of this plugin: it was my first real dive into reflection, and it is really cool all the debugging and fun stuff you can do with it :)
 
