@@ -7,6 +7,12 @@ This repo isn't properly organized. It is more of an online backup of some impor
 # Plugins
 
 
+## Anti Foundation Stack
+
+**BUG WAS FIXED IN MAIN GAME**
+
+A simple bug fix to stop players from stacking square foundations inside eachother.
+
 ## BlueprintsRevived (The Blueprint System)
 
 Bringing back the original blueprint system into current rust. Trying to keep the original feel while bringing in all the new features.
@@ -49,6 +55,62 @@ Luckily, presents had an "unwrap" and "combine" option, which was good enough to
 
 A SUPER simple plugin, that grabs the combatlog of a player based on steamID. Eventually the plugin will change the way combatlog works, by filtering hits on players, animals, building blocks, heli, etc. (Would only display player attacks, the rest are irrelivant 99% of the time)
 
+## Jake UI Framework
+
+Oxide's Community UI manager was crappy and cumbersome. I made an object orientated version that also made it easy to add callbacks, variable text, etc.
+
+Each element derives from a base class **UIBaseElement**, which handles the resizing and parent/child relations between elements.
+
+Then each CUI element has it's own class with editable properties, and a big constructor if you want to declare the UI in one line.
+
+Buttons are easier to use: just add an action to **UIButton.onClicked** for hooks when a button is clicked.
+
+To show or hide UI to a player, call UIElement.Show(BasePlayer) or UIElement.Hide(BasePlayer) respectively. You can have a panel containing multiple elements inside it, and it will show or hide all child elements as well.
+
+If you want to update UI with a new value, call UIElement.Refresh(BasePlayer) (use null as the parameter to refresh for all players). It will only update for players who currently see the UI, not show it to all players.
+
+Add a delegate to **EITHER:**
+
+
+**UIElement.conditionalShow:** Return true/false to show or hide an element.
+
+**UIElement.conditionalSize:** Change the size of an element. Useful for a bar display.
+
+**UILabel.variableText:** Change the label's text.
+
+**UIRawImage.variablePNG:** Change the image.
+
+
+
+Example \#1:
+
+    //Shows the countdown left when researching, or blank when not researching
+
+    researchCountdownLabel.variableText = delegate (BasePlayer player)
+    {
+        var data = GetResearchData(player);
+        if (!(data.isResearchingItem && data.usingResearchTable))
+        {
+            return "";
+        }
+        return data.timeLeft.ToString();
+
+    };
+
+Example \#2:
+    
+    //Changes the durability icon by changing the height of a green box based on the durability of a weapon
+    
+    itemDurabilityPanel.conditionalSize = delegate (BasePlayer player)
+    {
+        var data = GetResearchData(player);
+        if (data.targetItem == null)
+        {
+            return itemDurabilityPanel.size;
+        }
+        return new Vector2(itemDurabilityPanel.size.x, data.targetItem.conditionNormalized * data.targetItem.maxConditionNormalized * 1f);
+    };
+
 ## NoDespawning
 
 Could also be called "PersistantItems". A super cool plugin I wrote over a random weekend: it optimizes dropped items on a server, while also allowing them to stay around way longer. 
@@ -86,3 +148,9 @@ Allows you to look around at all the variables, and call functions inside any ru
 I am actually super proud of this plugin: it was my first real dive into reflection, and it is really cool all the debugging and fun stuff you can do with it :)
 
 Was super useful to see what funky stuff was going on when our modded server was really laggy. Perhaps there was an edge case causing a dictionary not to be cleared, or you wanted to call a reset function, but couldn't reload the plugin to add a chat command.
+
+## Weapons On Back
+
+**The mod that inspired the feature in the main game!  (or so I hope!)**
+
+My **first** popular mod, and the plugin reflects my humble beginnings. I was playing around and figured out that setting the parent of an entity would also bind it clientside. I mocked something up, and played around with rotations to get each weapon positioned correctly. I set the parent bone to "spine1", so they would move correctly as the player looked around. I settled on showing only the best weapon not currently equiped, as it was easy to determine best weapon, made sense logically when looking at players and was the hardest to abuse. It looked great once I got all the weapons in the right spot, and ended up on nearly every modded server. And then eventually every server! :)
