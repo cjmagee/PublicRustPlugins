@@ -42,14 +42,14 @@ And more I forgot about!
 
 ### Details:
 
-It was incredibly satisfying to see players run around in only the [gear they had researched](https://gyazo.com/08f2e2633cd72e5709809c38bbfe47b5), the lucky naked that found a [C4 inside a crate](https://gyazo.com/08f2e2633cd72e5709809c38bbfe47b5). Servers were [pretty popular] and people e
+It was incredibly satisfying to see players run around in only the [gear they had researched](https://gyazo.com/08f2e2633cd72e5709809c38bbfe47b5), the lucky naked that found a [C4 inside a crate](https://gyazo.com/08f2e2633cd72e5709809c38bbfe47b5). Servers were [pretty popular](https://gyazo.com/1badeb5a4900bac265594079f5c038a8) and it was great seeing so many people enjoy my work.
 
-There were many hacky solutions I had to use. This mod was decievingly simple: there was a bunch of stuff going around in the background to make it look as normal and unmodded as possible for the player.
+There were many "hacky" solutions that had to be used. This mod was decievingly simple: there was a bunch of stuff going around in the background to make it look as normal and unmodded as possible for the player.
 
 The research table on it's own did absolutely nothing. I had to add a custom monobehavior to each one, that would add a sphere collider. When players entered the sphere collider, it would raycast 4m in front of the player 4x a second to see if they were looking at the research table. If so, it would show the icons and "Open" text just like the original table did, and allow the UI to open when the player pressed "E".
 
 Since blueprint fragments were completely out of the game, I had to upload custom workshop skins and reskin an existing item to look 
-like fragments. 
+like fragments. When the items were dropped, they had to be turned from presents into Blueprint items, and vise-versa when picked up.
 
 When uploading a workshop skin, you disconnect your internet, find the folder in %TEMP%, replace the icon.png with your custom icon, and reconnect your internet to upload your custom workshop item. Forget how I figured that out, but that was the spark that got me to actually take this mod on.
 
