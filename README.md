@@ -28,6 +28,7 @@ Accurate blueprint tiers (balanced with current items)
 Recycle blueprints to down-convert them (pages to fragments for example)  
 Research tables work extremely similar to original version (had to use a custom UI to have accuracte research percentage)  
 Research tables appear in all monuments (will be loaded in and removed when the plugin is loaded / unloaded) [1](https://gyazo.com/53425691b3cd0902c47876859e9d8093) [2](https://gyazo.com/520caddc390c42333528cd544b7d44c0) [3](https://gyazo.com/520caddc390c42333528cd544b7d44c0)
+
 Arrow raiding (Only on wood, and extremely slow on stone)  
 Softsiding doors and ladder hatches  
 Old raid towers / building privledge (irrelivant now that you can build twig inside building blocked)  
