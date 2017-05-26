@@ -9,11 +9,13 @@ This repo isn't properly organized. It is more of an online backup of some impor
 
 ## Anti Foundation Stack
 
-**BUG WAS FIXED IN MAIN GAME**
+Luckily, this bug has been fixed in the main game.
 
-A simple bug fix to stop players from stacking square foundations inside eachother.
+A simple bug fix to stop players from stacking square foundations inside eachother. [(To prevent this)](https://gyazo.com/8b5b1c10cb8e65da78e4d1258205d8c8)
 
 ## BlueprintsRevived (The Blueprint System)
+
+[Preview](https://gyazo.com/5da30c0e61e4d822e1d9862a446a7d5e)
 
 Bringing back the original blueprint system into current rust. Trying to keep the original feel while bringing in all the new features.
 
@@ -25,7 +27,7 @@ Accurate loot tables to July 2016 branch (with current items added on top)
 Accurate blueprint tiers (balanced with current items)  
 Recycle blueprints to down-convert them (pages to fragments for example)  
 Research tables work extremely similar to original version (had to use a custom UI to have accuracte research percentage)  
-Research tables appear in all monuments (will be loaded in and removed when the plugin is loaded / unloaded)  
+Research tables appear in all monuments (will be loaded in and removed when the plugin is loaded / unloaded) [1](https://gyazo.com/53425691b3cd0902c47876859e9d8093) [2](https://gyazo.com/520caddc390c42333528cd544b7d44c0) [3](https://gyazo.com/520caddc390c42333528cd544b7d44c0)
 Arrow raiding (Only on wood, and extremely slow on stone)  
 Softsiding doors and ladder hatches  
 Old raid towers / building privledge (irrelivant now that you can build twig inside building blocked)  
@@ -39,6 +41,8 @@ Configurable blueprint fragment rate (for modded servers)
 And more I forgot about!  
 
 ### Details:
+
+It was incredibly satisfying to see players run around in only the [gear they had researched](https://gyazo.com/08f2e2633cd72e5709809c38bbfe47b5), the lucky naked that found a [C4 inside a crate](https://gyazo.com/08f2e2633cd72e5709809c38bbfe47b5). Servers were [pretty popular] and people e
 
 There were many hacky solutions I had to use. This mod was decievingly simple: there was a bunch of stuff going around in the background to make it look as normal and unmodded as possible for the player.
 
@@ -113,6 +117,8 @@ Example \#2:
 
 ## NoDespawning
 
+[Preview of the background magic](https://gyazo.com/e3de3eae60f72688d298fe165b6e2774)
+
 Could also be called "PersistantItems". A super cool plugin I wrote over a random weekend: it optimizes dropped items on a server, while also allowing them to stay around way longer. 
 
 When this was first designed, all items had super long despawn times. It was soon discovered that the only way players get rid of trash is by dropping it on the ground and letting it despawn. As it currently stands, items such as burlap clothing only stick around for 15 minutes, while an assault rifle will stay around for 3 days, and an m249 will stay around for an entire week.
@@ -121,7 +127,7 @@ When this was first designed, all items had super long despawn times. It was soo
 
 The optimization was to disable any inactive items, so that we wouldn't hit the collider limit by having a bunch of entities just sitting around on the ground, plus the more items with physics, the more the server is stressed.
 
-I split the world into a grid with 20m X 20m cells, and assigned all items into their own cells. Once all items inside a grid stopped moving, the rigidbodies would all be disabled. Once a new item is dropped in the grid OR an entity with dropped items on it was destroyed, all items in that grid will be reactivated, and would stay active until an minimum timout and they stop moving.
+I split the world into a grid with [20m X 20m cells](https://gyazo.com/d92de59ad084254af2d86dc634f99b7c), and assigned all items into their own cells. Once all items inside a grid stopped moving, the rigidbodies would all be disabled. Once a new item is dropped in the grid OR an entity with dropped items on it was destroyed, all items in that grid will be reactivated, and would stay active until an minimum timout and they stop moving.
 
 Since items would be sticking around for a lot longer than 5 minutes and people would still try to despawn, I made multiple of the same item stack. This means that when destroying a chest filled up with wood, instead of dropping 30 individual stacks, it drops one stack of 30,000. When picking up the wood, you will only take 1 stack at a time, until it is all gone. 
 
@@ -150,6 +156,8 @@ I am actually super proud of this plugin: it was my first real dive into reflect
 Was super useful to see what funky stuff was going on when our modded server was really laggy. Perhaps there was an edge case causing a dictionary not to be cleared, or you wanted to call a reset function, but couldn't reload the plugin to add a chat command.
 
 ## Weapons On Back
+
+[Preview](https://gyazo.com/bdd1de1c0029f87df1c43a54a3bf0ca8)
 
 **The mod that inspired the feature in the main game!  (or so I hope!)**
 
