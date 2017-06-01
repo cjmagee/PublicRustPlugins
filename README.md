@@ -43,7 +43,7 @@ And more I forgot about!
 
 ### Details:
 
-It was incredibly satisfying to see players run around in only the [gear they had researched](https://gyazo.com/08f2e2633cd72e5709809c38bbfe47b5), the lucky naked that found a [C4 inside a crate](https://gyazo.com/08f2e2633cd72e5709809c38bbfe47b5). Servers were [pretty popular](https://gyazo.com/1badeb5a4900bac265594079f5c038a8) and it was great seeing so many people enjoy my work.
+It was incredibly satisfying to see players run around in only the [gear they had researched](https://gyazo.com/08f2e2633cd72e5709809c38bbfe47b5), the lucky naked that found a [C4 inside a crate](https://gyazo.com/08f2e2633cd72e5709809c38bbfe47b5). Servers were [pretty popular](https://gyazo.com/d328f49286f20fcf46fa7d8c4b5d5545) and it was great seeing so many people enjoy my work.
 
 There were many "hacky" solutions that had to be used. This mod was decievingly simple: there was a bunch of stuff going around in the background to make it look as normal and unmodded as possible for the player.
 
