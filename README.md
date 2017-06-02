@@ -1,19 +1,20 @@
-# What is this?
+# Jake's Rust Plugins
 
-This repo isn't properly organized. It is more of an online backup of some important public plugins, that people can look through and check out.
-
-
-
-# Plugins
+1. [Anti Foundation Stack](#anti-foundation-stack)
+2. [Blueprints Revived](#blueprints-revived)
 
 
 ## Anti Foundation Stack
+
+* [Oxide Listing](http://google.com/?q=link+to+oxide+page)
+* [Installation](http://google.com/?q=link+to+oxide+help+page)
+* [Configuration](http://google.com/?q=link+to+config+file+explanation)
 
 Luckily, this bug has been fixed in the main game.
 
 A simple bug fix to stop players from stacking square foundations inside eachother. [(To prevent this)](https://gyazo.com/8b5b1c10cb8e65da78e4d1258205d8c8)
 
-## BlueprintsRevived (The Blueprint System)
+## Blueprints Revived
 
 [Preview](https://gyazo.com/5da30c0e61e4d822e1d9862a446a7d5e)
 
